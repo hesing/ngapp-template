@@ -57,7 +57,7 @@ module.exports = function(app, express) {
 
             if (!user) {
 
-                res.send({
+                res.status(404).send({
                     message: "User doenst exist"
                 });
             } else if (user) {
@@ -65,8 +65,8 @@ module.exports = function(app, express) {
                 var validPassword = user.comparePassword(req.body.password);
 
                 if (!validPassword) {
-                    res.send({
-                        message: "Invalid Password"
+                    res.status(400).send({
+                        message: "Invalid username/password"
                     });
                 } else {
 
@@ -74,7 +74,6 @@ module.exports = function(app, express) {
                     var token = createToken(user);
 
                     res.json({
-                        success: true,
                         message: "Successfuly login!",
                         token: token
                     });
