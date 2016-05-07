@@ -1,7 +1,7 @@
 {
   "name": "ngapp-template",
   "version": "1.0.0",
-  "description": "## Publish to npm registry",
+  "description": "bootstrap 4, cosmo theme, flexbox in action",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
