@@ -1,0 +1,55 @@
+@import "../theme/variables";
+
+.callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-width: 1px 1px 1px .3rem;
+    border-style: solid;
+}
+.callout h4 {
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+.callout p:last-child {
+    margin-bottom: 0
+}
+.callout code {
+    border-radius: .25rem
+}
+.callout+.callout {
+    margin-top: -.25rem
+}
+
+.callout-primary {
+    border-color: $brand-primary;
+}
+
+.callout-primary h4 {
+    color: $brand-primary;
+}
+
+.callout-success {
+    border-color: $brand-success;
+}
+.callout-success h4 {
+    color: $brand-success;
+}
+.callout-info {
+    border-color: $brand-info;
+}
+.callout-info h4 {
+    color: $brand-info;
+}
+.callout-warning {
+    border-color: $brand-warning;
+}
+.callout-warning h4 {
+    color: $brand-warning;
+}
+.callout-danger {
+    border-color: $brand-danger;
+}
+.callout-danger h4 {
+    color: $brand-danger;
+}

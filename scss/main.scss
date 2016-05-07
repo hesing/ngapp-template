@@ -1,0 +1,32 @@
+@import "theme/theme";
+@import '../bootstrap-scss/bootstrap.scss';
+@import "components/callout";
+@import "components/sidebar";
+@import "theme/bootstrap-override";
+
+html, body, #wrapper{
+	height: 100%;
+}
+
+body{
+	padding-top: 56px;
+}
+
+#wrapper{
+	display: flex;
+}
+
+#wrapper .content{
+	padding: 15px;
+	width: 100%;
+}
+
+@media (min-width: 48em) { 
+	.sidebar.toggled + .content{
+		width: calc(100% - 280px);
+	}
+}
+
+
+
+

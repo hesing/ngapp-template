@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Theme Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <button class="navbar-toggler" type="button">
+                &#9776;
+            </button>
+            NG2 Demo
+        </a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+      <aside class="sidebar left sidebar-menu-bg sidebar-xs" ng-class="{'toggled': appvm.toggledLeft}" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfig">
+          <div class="sidebar-inner">
+              <ul class="menu">
+                  <li>
+                      <a href=''>Home</a>
+                  </li>
+                  <li class="active">
+                      <a href=''>About</a>
+                  </li>
+                  <li>
+                      <a href=''>Contact</a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="">
+                        <i class="ti-angle-right menu-arrow"></i> Headers</a>
+                      <ul>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.textual-menu" data-ui-sref-active="active" class="active" href="#/headers/textual-menu">Textual menu</a></li>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.image-logo" data-ui-sref-active="active" href="#/headers/image-logo">Image logo</a></li>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.mainmenu-on-top" data-ui-sref-active="active" href="#/headers/mainmenu-on-top">Mainmenu on top</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </aside>      
+    
+
+
+
+<div class="settings-page">
+  <div class="container page">
+    <div class="row">
+
+      <div class="col-md-6 offset-md-3 col-xs-12">
+        <h1 class="text-xs-center">Your Settings</h1>
+
+        <form>
+          <fieldset>
+            <fieldset class="form-group">
+              <input class="form-control" type="text" placeholder="URL of profile picture">
+              <!-- <input type="file" id="file"> -->
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Your Name">
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea class="form-control form-control-lg" rows="8" placeholder="Short bio about you"></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Email">
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="password" placeholder="Password">
+            </fieldset>
+            <button class="btn btn-lg btn-primary pull-xs-right">
+              Update Settings
+            </button>
+          </fieldset>
+        </form>
+
+        <!-- Line break for logout button -->
+        <hr />
+
+        <button class="btn btn-outline-danger">
+          Or click here to logout.
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+      <div class="container">
+        <a href="/" class="logo-font">conduit</a>
+        <span class="attribution">
+          An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp; design licensed under MIT.
+        </span>
+      </div>
+    </footer>
+
+
+	<script src="vendor/jquery-2.2.3.min.js"></script>
+  <script src="vendor/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+  </body>
+</html>
+

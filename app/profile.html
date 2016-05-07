@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Theme Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <button class="navbar-toggler" type="button">
+                &#9776;
+            </button>
+            NG2 Demo
+        </a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+      <aside class="sidebar left sidebar-menu-bg sidebar-xs" ng-class="{'toggled': appvm.toggledLeft}" ng-scrollbars ng-scrollbars-config="appvm.scrollbarConfig">
+          <div class="sidebar-inner">
+              <ul class="menu">
+                  <li>
+                      <a href=''>Home</a>
+                  </li>
+                  <li class="active">
+                      <a href=''>About</a>
+                  </li>
+                  <li>
+                      <a href=''>Contact</a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="">
+                        <i class="ti-angle-right menu-arrow"></i> Headers</a>
+                      <ul>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.textual-menu" data-ui-sref-active="active" class="active" href="#/headers/textual-menu">Textual menu</a></li>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.image-logo" data-ui-sref-active="active" href="#/headers/image-logo">Image logo</a></li>
+                          <li><a data-ng-click="mactrl.sidebarStat($event)" data-ui-sref="headers.mainmenu-on-top" data-ui-sref-active="active" href="#/headers/mainmenu-on-top">Mainmenu on top</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </aside>      
+    
+
+
+
+<div class="profile-page">
+
+  <div class="user-info">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-md-10 offset-md-1">
+          <img src="http://i.imgur.com/Qr71crq.jpg" class="user-img" />
+          <h4>ericsimons</h4>
+          <p>
+            Cofounder @GoThinkster, lived in Aol's HQ for a few months, kinda looks like Peeta from the Hunger Games
+          </p>
+          <button class="btn btn-sm btn-outline-secondary action-btn">
+            <i class="ion-plus-round"></i>
+            &nbsp;
+            Follow ericsimons <span class="counter">(10)</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12 col-md-10 offset-md-1">
+        <div class="articles-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favorited Posts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="article-preview">
+  <div class="article-meta">
+    <a href="profile.html"><img src="http://i.imgur.com/Qr71crq.jpg" /></a>
+    <div class="info">
+      <a href="profile.html" class="author">ericsimons</a>
+      <span class="date">January 20th</span>
+    </div>
+    <button class="btn btn-outline-primary btn-sm pull-xs-right">
+      <i class="ion-heart"></i> 29
+    </button>
+  </div>
+  <a href="article.html" class="preview-link">
+    <h1>How to build webapps that scale</h1>
+    <p>Building web applications is not an easy task. It's even hard to make ones that scale.</p>
+    <span>Read more...</span>
+    <ul class="tag-list">
+      <li class="tag-default tag-pill tag-outline">programming</li>
+      <li class="tag-default tag-pill tag-outline">web</li>
+    </ul>
+  </a>
+</div>
+
+<div class="article-preview">
+  <div class="article-meta">
+    <a href="profile.html"><img src="http://i.imgur.com/N4VcUeJ.jpg" /></a>
+    <div class="info">
+      <a href="profile.html" class="author">Albert Pai</a>
+      <span class="date">January 20th</span>
+    </div>
+    <button class="btn btn-outline-primary btn-sm pull-xs-right">
+      <i class="ion-heart"></i> 32
+    </button>
+  </div>
+  <a href="article.html" class="preview-link">
+    <h1>The song you won't ever stop singing</h1>
+    <p>You've probably heard it before, but not since your childhood. That's right, "John Jacob Jingleheimer Schmidt" is back.</p>
+    <span>Read more...</span>
+    <ul class="tag-list">
+      <li class="tag-default tag-pill tag-outline">songs</li>
+      <li class="tag-default tag-pill tag-outline">javascript</li>
+      <li class="tag-default tag-pill tag-outline">react</li>
+    </ul>
+  </a>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+    <footer>
+      <div class="container">
+        <a href="/" class="logo-font">conduit</a>
+        <span class="attribution">
+          An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp; design licensed under MIT.
+        </span>
+      </div>
+    </footer>
+
+
+	<script src="vendor/jquery-2.2.3.min.js"></script>
+  <script src="vendor/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+  </body>
+</html>
+
