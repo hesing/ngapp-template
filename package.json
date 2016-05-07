@@ -1,6 +1,6 @@
 {
   "name": "ngapp-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "bootstrap 4, cosmo theme, flexbox in action",
   "main": "gulpfile.js",
   "dependencies": {
