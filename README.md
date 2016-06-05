@@ -18,7 +18,7 @@ npm publish
 ## Use published package
 
 ```
-npm install hk-theme 
+npm install ngapp-template 
 ```
 
 ## Theme Setup
